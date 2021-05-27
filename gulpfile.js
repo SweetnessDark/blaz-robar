@@ -1,4 +1,4 @@
-const {src, dest, watch, parallel} = require('gulp');
+const {src, dest, watch, parallel, series} = require('gulp');
 
 const scss = require('gulp-sass');
 
@@ -8,15 +8,26 @@ const browserSync = require('browser-sync').create();
 
 const uglify = require('gulp-uglify-es').default;
 
-const postcss = require('postcss-sort-media-queries');
+const autoprefixer = require('gulp-autoprefixer');
 
- function postcss([
-    sortMediaQueries({
-      sort: 'desktop-first'
-    })
-  ]) {
-    process(css);
-  }
+const imagemin = require('gulp-imagemin');
+
+const del = require('del');
+
+// const postcss = require('postcss-sort-media-queries');
+const { css } = require('jquery');
+
+//  function postcss([
+//     sortMediaQueries({
+//       sort: 'desktop-first'
+//     })
+//   ]) {
+//     process(css);
+//   }
+
+function cleanDist() {
+  return del('dist')
+}
 
 function browsersync() {
   browserSync.init({
@@ -26,12 +37,42 @@ function browsersync() {
   });
 }
 
+function images() {
+  return src('app/images/**/*')
+  .pipe(imagemin([
+    imagemin.gifsicle({interlaced: true}),
+    imagemin.mozjpeg({quality: 75, progressive: true}),
+    imagemin.optipng({optimizationLevel: 5}),
+    imagemin.svgo({
+        plugins: [
+            {removeViewBox: true},
+            {cleanupIDs: false}
+        ]
+    })
+]))
+  .pipe(dest('dist/images'))
+}
+
 function styles() {
   return src('app/scss/style.scss')
   .pipe(scss({outputStyle: 'compressed'}))
   .pipe(concat('style.min.css'))
+  .pipe(autoprefixer({
+    overrideBrowserlist: ['last 10 version']
+  }))
+  // .pipe(postcss('app/css/style.min.css'), css)
   .pipe(dest('app/css'))
   .pipe(browserSync.stream())
+}
+
+function build() {
+  return src([
+    'app/css/style.min.css',
+    'app/fonts/**/*',
+    'app/js/main.min.js',
+    'app/*.html'
+  ], {base: 'app'})
+  .pipe(dest('dist'))
 }
 
 function watching() {
@@ -55,6 +96,8 @@ exports.styles = styles;
 exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
-exports.postcss = postcss;
+exports.images = images;
+exports.cleanDist = cleanDist;
 
-exports.default = parallel(postcss, scripts, browsersync, watching);
+exports.build = series(cleanDist, images, build);
+exports.default = parallel(scripts, browsersync, watching);

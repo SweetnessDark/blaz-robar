@@ -1,7 +1,9 @@
-.test {
-    text-align: center;
-    margin: 0;
-    &__box {
-        padding: auto;
+body {
+    background-color: black;
+    @media all and(max-width: 768px) {
+    background-color: red;
+    }
+    @media all and(max-width: 768px) {
+    font-size: 14px;
     }
 }

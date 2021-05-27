@@ -1,17 +1,22 @@
+//Whatch - слежение за файлами
+//Dest - функция при которой файлы с одной папки перебрасываються в другую папку
+//Parallel - одновременный запуск большого количества функций
+//Series - функция которая запускает последовательную операцию(похожа на Parallel)
+
 const {src, dest, watch, parallel, series} = require('gulp');
-
+//Плагин для конвертации файлов scss в css
 const scss = require('gulp-sass');
-
+//Плагин для обьединения большого количества файлов в один файл
 const concat = require('gulp-concat');
-
+//Плагин для атоматического обновления страницы
 const browserSync = require('browser-sync').create();
-
+//Плагин для минификации файлов js
 const uglify = require('gulp-uglify-es').default;
-
+//Плагин для лучшей совместимости с другими браузерами
 const autoprefixer = require('gulp-autoprefixer');
-
+//Плагин для сжатия и минифицирования картинок
 const imagemin = require('gulp-imagemin');
-
+//Плагин для удаления ненужной папки или папки в которой много мусора
 const del = require('del');
 
 // const postcss = require('postcss-sort-media-queries');

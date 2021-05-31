@@ -19,3 +19,14 @@
 
 //* Components *//
 @import 'components/main';
+
+body {
+    div.hello {
+        h1{
+            @include triangle;
+            @include animate;
+            @include placeholder;
+            @include v-align-pair;
+        }
+    }
+}

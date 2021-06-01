@@ -13,34 +13,6 @@ $breakpoints: (
   'widescreen': 1200px,
 );
 
-// Keywords for include media mixin
-$media-expressions: (
-  'screen': 'screen',
-  'print': 'print',
-  'handheld': 'handheld',
-  'landscape': '(orientation: landscape)',
-  'portrait': '(orientation: portrait)',
-  'retina2x': (
-    '(-webkit-min-device-pixel-ratio: 1.5)',
-    '(min-resolution: 144dpi)',
-  ),
-  'retina3x': (
-    '(-webkit-min-device-pixel-ratio: 2.5)',
-    '(min-resolution: 240dpi)',
-  ),
-  'hover': (
-    '(hover: hover)' '(pointer: fine)',
-    '(-ms-high-contrast: none)',
-    '(-ms-high-contrast: active)',
-  ),
-  'theme-light': 'prefers-color-scheme: light',
-  'theme-dark': 'prefers-color-scheme: dark',
-  'ie': (
-    '(-ms-high-contrast: none)',
-    '(-ms-high-contrast: active)',
-  ),
-);
-
 :root {
   // Breakpoints
   --phone: #{map-get($breakpoints, 'phone')};
@@ -75,13 +47,6 @@ $media-expressions: (
   --btn-padding: 0.4em 0.7em;
   --btn-font-size: 1.6rem;
   --btn-font-family: var(--font-sans-serif);
-
-  // Forms base
-  --form-font-family: var(--font-sans-serif);
-  --form-element-padding: var(--btn-padding);
-  --form-element-border-color: var(--color-grey);
-  --form-element-focus-border-color: var(--color-black);
-  --placeholder-color: var(--color-grey);
 
   // Headings base
   --headings-font-family: var(--font-sans-serif);

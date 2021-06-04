@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  margin: 0;
   @include font-smoothing(on);
   color: var(--base-text-color);
   background: var(--base-background-color);

@@ -1,0 +1,19 @@
+.nav-list {
+  list-style: none;
+  display: -webkit-flex;
+  li {
+    padding: 0 0 0 31px;
+    a {
+      transition: .5s;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      color: #fff;
+    }
+    a:hover {
+      opacity: 0.5;
+      transition: .5s;
+    }
+  }
+}

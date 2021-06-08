@@ -1,9 +1,10 @@
 .logo {
+  margin: 45px 550px 0 32px;
+  float: left;
+  width: 100px;
+
   a {
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
+    font: 400 24px/1 'Montserrat', 'Arial', 'Helvetica Neue' sans-serif;
     color: #fff;
   }
 }

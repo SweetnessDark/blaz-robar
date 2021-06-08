@@ -1,19 +1,24 @@
 .nav-list {
-  list-style: none;
-  display: -webkit-flex;
+  @extend %listreset;
+
   li {
-    padding: 0 0 0 31px;
-    a {
-      transition: .5s;
-      text-decoration: none;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 15px;
-      font-weight: 400;
-      color: #fff;
+    padding-left: 31px;
+    float: left;
+
+    &:first-child {
+      padding-left: 0;
     }
-    a:hover {
+  }
+
+  a {
+    transition: opacity 250ms linear, color 300ms linear;
+    font: 400 15px/1 'Montserrat', 'Arial', 'Helvetica Neue' sans-serif;
+    color: #fff;
+
+    &:hover, 
+    &:active {
+      color: violet;
       opacity: 0.5;
-      transition: .5s;
     }
   }
 }

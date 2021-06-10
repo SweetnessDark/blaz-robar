@@ -1,18 +1,23 @@
 .background-link {
-    float: right;
-    margin: -196px 0 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 228px;
+    height: 244px;
+    
+    background-color: #bc3183;
+    transition: background-color 0.4s linear;
     a {
-        transition: .5s;
-        background-color: #bc3183;
-        text-decoration: none;
-        padding: 94px 104px 105px 94px;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 50px;
-        font-weight: 700;
+        position: absolute;
+        top: 98px;
+        right: 94px;
+        font: 700 50px/1 'Quicksand', 'Arial', 'Helvetica Neue', sans-serif;
         color: #fff;
+
     }
-    a:hover {
-        transition: .5s;
-        background-color: #800080;
-    }
+    
+}
+.background-link:hover {
+    background-color: #800080;
+
 }

@@ -1,10 +1,12 @@
 .text-link {
     background-color: #27212c;
+    width: 100%;
+    height: 244px;
+
     p {
-        padding: 108px 0 104px 84px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
-        font-weight: 700;
+        padding-top: 112px;
+        padding-left: 84px;
+        font: 700 30px/1 'Montserrat', 'Arial', 'Helvetica Neue', sans-serif;
         color: #9282a0;
     }
 }

@@ -6,7 +6,6 @@
     .container {
         position: relative;
         height: 100%;
-        margin-left: 78px;
     }
 
     .holder {
@@ -18,10 +17,9 @@
     }
 
     h1 {
-        margin: 0;
+        margin: 0 0 63px 0;
         font: 400 60px/1 'Montserrat', 'Arial', 'Helvetica Neue', sans-serif;
         color: #fff;
-        margin-bottom: 63px;
     
     }
 
@@ -37,7 +35,7 @@
             color: #fff;
             content: '>';
             position: absolute;
-            right: 223px;
+            right: 0;
         }
     }
 }

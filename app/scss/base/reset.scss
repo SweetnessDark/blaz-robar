@@ -17,6 +17,7 @@ html, body {
 }
 
 body {
+  margin: 0;
   @include font-smoothing(on);
   color: var(--base-text-color);
   background: var(--base-background-color);
@@ -24,6 +25,10 @@ body {
   min-width: var(--base-min-width);
   display: flex;
   flex-direction: column;
+}
+
+a {
+  text-decoration: none;
 }
 
 // adaptive images

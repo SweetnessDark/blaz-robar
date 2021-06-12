@@ -1,23 +1,24 @@
 .background-link {
-    position: absolute;
-    top: 0;
-    right: 0;
+    float: right;
     width: 228px;
     height: 244px;
+    position: relative;
     
     background-color: #bc3183;
     transition: background-color 0.4s linear;
-    a {
-        position: absolute;
-        top: 98px;
-        right: 94px;
-        font: 700 50px/1 'Quicksand', 'Arial', 'Helvetica Neue', sans-serif;
-        color: #fff;
 
+    &:hover {
+    background-color: #800080;
+    
     }
     
-}
-.background-link:hover {
-    background-color: #800080;
-
+    a {
+        font: 700 50px/1 'Quicksand', 'Arial', 'Helvetica Neue', sans-serif;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
 }

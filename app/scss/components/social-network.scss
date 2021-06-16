@@ -1,12 +1,13 @@
 .social-network {
     @extend %listreset;
+    float: right;
 
     li {
-        float: right;
+        float: left;
         padding-left: 31px;
         
         &:first-child {
-            padding-right: 0;
+            padding-left: 0;
         }
     }
 }

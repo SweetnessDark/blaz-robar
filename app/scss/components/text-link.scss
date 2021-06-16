@@ -1,0 +1,13 @@
+.text-link {
+    overflow: hidden;
+    position: relative;
+    font: 700 30px/1 'Montserrat', 'Arial', 'Helvetica Neue', sans-serif;
+    color: #9282a0;
+    height: 100%;
+
+    .holder {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

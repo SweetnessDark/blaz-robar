@@ -1,0 +1,23 @@
+.nav-list {
+  @extend %listreset;
+
+  li {
+    padding-left: 31px;
+    float: left;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  a {
+    transition: opacity 250ms linear;
+    font: 400 15px/1 'Montserrat', 'Arial', 'Helvetica Neue' sans-serif;
+    color: #fff;
+
+    &:hover, 
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

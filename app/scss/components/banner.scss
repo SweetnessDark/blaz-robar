@@ -14,10 +14,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
+        max-width: 695px;
     }
 
     h1 {
-        margin: 0 0 63px 0;
+        margin: 0 0 63px;
         font: 400 60px/1 'Montserrat', 'Arial', 'Helvetica Neue', sans-serif;
         color: #fff;
     
@@ -25,13 +26,12 @@
 
     a {
         font: 700 34px/1 'Montserrat', 'Arial', 'Helvetica Neue', sans-serif;
-        color: #fff;
+        color: rgba(255, 255, 255, 0.5);
         display: block;
         width: 100%;
-        opacity: 0.5;
 
         &:after {
-            font: 700 34px/1 'Quicksand', 'Arial', 'Helvetica Neue', sans-serif;
+            font: 700 36px/1 'Quicksand', 'Arial', 'Helvetica Neue', sans-serif;
             color: #fff;
             content: '>';
             position: absolute;

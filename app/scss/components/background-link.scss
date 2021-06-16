@@ -3,13 +3,11 @@
     width: 228px;
     height: 244px;
     position: relative;
-    
     background-color: #bc3183;
     transition: background-color 0.4s linear;
 
     &:hover {
-    background-color: #800080;
-    
+        background-color: #800080;
     }
     
     a {
@@ -20,5 +18,4 @@
         left: 50%;
         transform: translate(-50%,-50%);
     }
-    
 }

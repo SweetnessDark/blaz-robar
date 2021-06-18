@@ -228,3 +228,22 @@
     &:-ms-input-placeholder {@content;}
     &.placeholder {@content;}
   }
+
+  @mixin position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  @mixin container {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  @mixin head-footer {
+    padding-top: 39px;
+    padding-bottom: 39px;
+  }

@@ -1,7 +1,6 @@
 .header {
-  padding-top: 39px;
-  padding-bottom: 39px;
-  background-color: #373c3f;
+  @include head-footer;
+  background-color: var(--color-header-footer);
   
   .container {
     padding-right: 32px;

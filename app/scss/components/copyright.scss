@@ -2,11 +2,11 @@
     float: left;
 
     p {
-        font: 400 15px/1 'Montserrat', 'Arial', 'Helvetica Neue' sans-serif;
-        color: #fff;
+        font: var(--font-weight-copyright) var(--font-size-copyright) var(--font-sans-serif);
+        color: var(--color-white);
 
         span {
-            color: #bc3183;
+            color: var(--color-copyright);
         }
     }
 }

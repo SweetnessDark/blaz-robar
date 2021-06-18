@@ -12,8 +12,8 @@
 
   a {
     transition: opacity 250ms linear;
-    font: 400 15px/1 'Montserrat', 'Arial', 'Helvetica Neue' sans-serif;
-    color: #fff;
+    font: var(--font-weight-nav) var(--font-size-nav) var(--font-sans-serif);
+    color: var(--color-white);
 
     &:hover, 
     &:active {

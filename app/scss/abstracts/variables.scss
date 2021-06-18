@@ -24,10 +24,49 @@ $breakpoints: (
   --color-white: #fff;
   --color-grey: #999;
   --color-blue: #39f;
+  --color-light: #bc3183;
+  --color-dark: #5b0fa1;
+  --color-header-footer: #373c3f;
+  --color-banner-rgb: rgb(7,138,164);
+  --color-banner-gradient: linear-gradient(333deg, rgba(7,138,164,1) 0%, rgba(14,165,187,1) 35%, rgba(23,178,196,1) 100%);
+  --color-banner-a: rgba(255, 255, 255, 0.5);
+  --color-text-link: #9282a0;
+  --color-text-part: #515151;
+  --background-color-text-part: #ebebeb;
+  --color-text-part-h3: #088ca5;
+  --color-copyright: #bc3183;
 
   // Fonts
-  --font-sans-serif: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  --font-sans-serif: 'Montserrat', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   --font-serif: 'Times New Roman', Times, Baskerville, Georgia, serif;
+
+  //Style fonts
+  --font-weight-logo: 400;
+  --font-size-logo: 17px/1;
+
+  --font-weight-nav: 400;
+  --font-size-nav: 15px/1;
+
+  --font-weight-banner-h1: 400;
+  --font-size-banner-h1: 60px/1;
+  --font-weight-banner-a: 700;
+  --font-size-banner-a: 34px/1;
+  --font-weight-banner: 700;
+  --font-size-banner: 36px/1;
+
+  --font-weight-text-link: 700;
+  --font-size-text-link: 30px/1;
+
+  --font-weight-text-part: 400;
+  --font-size-text-part: 14px/26px;
+  --font-weight-text-h3: 400;
+  --font-size-text-h3: 30px/1;
+
+  --font-weight-copyright: 400;
+  --font-size-copyright: 15px/1;
+
+  --font-weight-link: 700;
+  --font-size-link: 50px/1;
 
   // Body base
   --base-background-color: var(--color-white);
@@ -48,7 +87,7 @@ $breakpoints: (
   --btn-font-family: var(--font-sans-serif);
 
   // Headings base
-  --headings-font-family: var(--font-sans-serif);
+  --headings-font-family: 'Quicksand', 'Arial', 'Helvetica Neue', sans-serif;
   --headings-color: var(--base-text-color);
 
   // Base font styles for headings

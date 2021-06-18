@@ -1,8 +1,8 @@
 .text-link {
     overflow: hidden;
     position: relative;
-    font: 700 30px/1 'Montserrat', 'Arial', 'Helvetica Neue', sans-serif;
-    color: #9282a0;
+    font: var(--font-weight-text-link) var(--font-size-text-link) var(--font-sans-serif);
+    color: var(--color-text-link);
     height: 100%;
 
     .holder {

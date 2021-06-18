@@ -1,6 +1,6 @@
 .banner {
-    background: rgb(7,138,164);
-    background: linear-gradient(333deg, rgba(7,138,164,1) 0%, rgba(14,165,187,1) 35%, rgba(23,178,196,1) 100%);
+    background: var(--color-banner-rgb);
+    background: var(--color-banner-gradient);
     height: 579px;
 
     .container {
@@ -9,30 +9,27 @@
     }
 
     .holder {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include position;
         width: 100%;
         max-width: 695px;
     }
 
     h1 {
         margin: 0 0 63px;
-        font: 400 60px/1 'Montserrat', 'Arial', 'Helvetica Neue', sans-serif;
-        color: #fff;
+        font: var(--font-weight-banner-h1) var(--font-size-banner-h1) var(--font-sans-serif);
+        color: var(--color-white);
     
     }
 
     a {
-        font: 700 34px/1 'Montserrat', 'Arial', 'Helvetica Neue', sans-serif;
-        color: rgba(255, 255, 255, 0.5);
+        font: var(--font-weight-banner-a) var(--font-size-banner-a) var(--font-sans-serif);
+        color: var(--color-banner-a);
         display: block;
         width: 100%;
 
         &:after {
-            font: 700 36px/1 'Quicksand', 'Arial', 'Helvetica Neue', sans-serif;
-            color: #fff;
+            font: var(--font-weight-banner) var(--font-size-banner) var(--headings-font-family);
+            color: var(--color-white);
             content: '>';
             position: absolute;
             right: 0;

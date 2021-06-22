@@ -1,9 +1,10 @@
 .list-portfolio {
     @extend %listreset;
     height: 100%;
+    display: flex;
+    justify-content: center;
 
     li {
-        float: left;
         width: 33.3%;
         height: 100%;
     }

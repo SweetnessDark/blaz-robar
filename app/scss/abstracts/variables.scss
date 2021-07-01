@@ -49,10 +49,22 @@ $breakpoints: (
 
   --font-weight-banner-h1: 400;
   --font-size-banner-h1: 60px/1;
+  @media (max-width: 320px) {
+    --font-weight-banner-h1: 400;
+    --font-size-banner-h1: 13px/1;
+}
   --font-weight-banner-a: 700;
   --font-size-banner-a: 34px/1;
+  @media (max-width: 320px) {
+    --font-weight-banner-a: 700;
+    --font-size-banner-a: 11px/1;
+}
   --font-weight-banner: 700;
   --font-size-banner: 36px/1;
+  @media (max-width: 320px) {
+    --font-weight-banner: 700;
+    --font-size-banner: 11px/1;
+}
 
   --font-weight-text-link: 700;
   --font-size-text-link: 30px/1;

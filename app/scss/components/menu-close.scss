@@ -1,0 +1,12 @@
+.menu-close {
+    float: right;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    @media (max-width: 320px) {
+        display: none;
+    }
+}

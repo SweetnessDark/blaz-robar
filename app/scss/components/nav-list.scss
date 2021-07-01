@@ -1,9 +1,9 @@
 .nav-list {
   @extend %listreset;
+  @include flex;
 
   li {
     padding-left: 31px;
-    float: left;
 
     &:first-child {
       padding-left: 0;

@@ -246,6 +246,11 @@
   @mixin head-footer {
     padding-top: 39px;
     padding-bottom: 39px;
+
+    @media (max-width: 320px) {
+      padding-top: 0px;
+      padding-bottom: 0px;
+  }
   }
   
   @mixin flex {

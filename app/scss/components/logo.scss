@@ -6,4 +6,10 @@
     font: var(--font-weight-logo) var(--font-size-logo) var(--font-sans-serif);
     color: var(--color-white);
   }
+
+  @media (max-width: 320px) {
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%, -0);
+  }
 }

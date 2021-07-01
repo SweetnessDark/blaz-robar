@@ -3,6 +3,10 @@
     background: var(--color-banner-gradient);
     height: 579px;
 
+    @media (max-width: 320px) {
+        height: 175px;
+    }
+
     .container {
         position: relative;
         height: 100%;
@@ -12,12 +16,20 @@
         @include position;
         width: 100%;
         max-width: 695px;
+
+        @media (max-width: 320px) {
+            @include position;
+        }
     }
 
     h1 {
         margin: 0 0 63px;
         font: var(--font-weight-banner-h1) var(--font-size-banner-h1) var(--font-sans-serif);
         color: var(--color-white);
+        
+        @media (max-width: 320px) {
+            margin: 0 0 0;
+        }
     
     }
 

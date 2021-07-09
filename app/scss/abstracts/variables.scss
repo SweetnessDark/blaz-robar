@@ -9,7 +9,7 @@ $rem: 10px;
 $breakpoints: (
   'phone': 480px,
   'tablet': 768px,
-  'desktop': 980px,
+  'desktop': 979px,
   'widescreen': 1200px,
 );
 
@@ -35,6 +35,7 @@ $breakpoints: (
   --background-color-text-part: #ebebeb;
   --color-text-part-h3: #088ca5;
   --color-copyright: #bc3183;
+  --color-button: #202529;
 
   // Fonts
   --font-sans-serif: 'Montserrat', Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -49,25 +50,29 @@ $breakpoints: (
 
   --font-weight-banner-h1: 400;
   --font-size-banner-h1: 60px/1;
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     --font-weight-banner-h1: 400;
     --font-size-banner-h1: 13px/1;
 }
   --font-weight-banner-a: 700;
   --font-size-banner-a: 34px/1;
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     --font-weight-banner-a: 700;
     --font-size-banner-a: 11px/1;
 }
   --font-weight-banner: 700;
   --font-size-banner: 36px/1;
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     --font-weight-banner: 700;
     --font-size-banner: 11px/1;
 }
 
   --font-weight-text-link: 700;
   --font-size-text-link: 30px/1;
+  @media (max-width: 480px) {
+    --font-weight-text-link: 700;
+    --font-size-text-link: 11px/1;
+  }
 
   --font-weight-text-part: 400;
   --font-size-text-part: 14px/26px;
@@ -79,6 +84,10 @@ $breakpoints: (
 
   --font-weight-link: 700;
   --font-size-link: 50px/1;
+  @media (max-width: 480px) {
+    --font-weight-link: 700;
+    --font-size-link: 31px/1;
+  }
 
   // Body base
   --base-background-color: var(--color-white);
@@ -109,4 +118,8 @@ $breakpoints: (
   --headings-sizes-h4: 2.1rem;
   --headings-sizes-h5: 1.7rem;
   --headings-sizes-h6: 1.5rem;
+
+  // Layout
+  --container-desktop-horizontal-padding: 12px;
+  --container-desktop-width: 960px;
 }

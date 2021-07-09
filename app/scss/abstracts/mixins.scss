@@ -237,20 +237,10 @@
   }
 
   @mixin container {
-    padding-right: 12px;
-    padding-left: 12px;
-    max-width: 960px;
+    padding-right: var(--container-desktop-horizontal-padding);
+    padding-left: var(--container-desktop-horizontal-padding);
+    max-width: var(--container-desktop-width);
     margin: 0 auto;
-  }
-
-  @mixin head-footer {
-    padding-top: 39px;
-    padding-bottom: 39px;
-
-    @media (max-width: 320px) {
-      padding-top: 0px;
-      padding-bottom: 0px;
-  }
   }
   
   @mixin flex {
@@ -258,3 +248,4 @@
     display: flex;
     justify-content: flex-end;
   }
+  

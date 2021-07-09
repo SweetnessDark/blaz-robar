@@ -1,0 +1,44 @@
+.icon {
+    display: inline-block;
+    line-height: 1;
+
+    &-hamburger {
+        position: relative;
+        width: 31px;
+        height: 4px;
+        background-color: var(--color-white);
+        transition: transform 250ms linear;
+
+        &:before,
+        &:after {
+            position: absolute;
+            right: 0;
+            left: 0;
+            content: '';
+            width: 31px;
+            height: 4px;
+            background-color: var(--color-white);
+            transition: transform 250ms linear;
+        }
+
+        &:before {
+            top: -10px;
+        }
+        &:after {
+            bottom: -10px;
+        }
+
+        .is-opened & {
+            background-color: transparent;
+
+            &:before {
+                transform: translate(11px, 2px) rotate(45deg);
+                transform-origin: left top;
+            }
+            &:after {
+                transform: translate(0, -19px) rotate(-45deg);
+                transform-origin: right bottom;
+            }
+        }
+    }
+}

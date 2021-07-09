@@ -1,15 +1,14 @@
 $(function() {
+	const $body = $('body');
+	const $btnHamburger = $('.btn-hamburger');
+	const $nav = $('.nav');
+	const MODAL_OPENED_CLASS_NAME = 'is-modal-opened';
+	const BTN_HAMBURGER_ACTIVE_CLASS_NAME = 'is-opened';
+	const NAVIGATION_ACTIVE_CLASS_NAME = 'is-opened';
 
-	//header menu
-	$('header .menu').triggerHandler(function(){
-	    $('nav ul').addClass('active');
-	    $(this).addClass('active');
-	    $('header .menu-close').addClass('active');
-	    });
-	//header menu-close
-	$('header .menu-close').triggerHandler(function(){
-	    $('nav ul').removeClass('active');
-	    $(this).removeClass('active');
-	    $('header .menu').removeClass('active');
-	    });
+	$btnHamburger.on('click', () => {
+		$body.toggleClass(MODAL_OPENED_CLASS_NAME);
+		$btnHamburger.toggleClass(BTN_HAMBURGER_ACTIVE_CLASS_NAME);
+		$nav.toggleClass(NAVIGATION_ACTIVE_CLASS_NAME);
+	});
 });

@@ -1,15 +1,27 @@
 .nav {
     @include flex;
 
-    &.active {
-        position: absolute;
-        z-index: 3;
-        top: 80;
-        left: 0;
+    &.is-opened {
         display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        background: #202529;
+
+    }
+    
+    @media (max-width: 979px) {
+        display: none;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: var(--tablet)) {
         display: none;
-      }
+    }
+
+    @media (max-width: var(--phone)) {
+        display: none;
+    }
 }

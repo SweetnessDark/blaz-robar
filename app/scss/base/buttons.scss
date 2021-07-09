@@ -1,0 +1,35 @@
+.btn {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    display: inline-block;
+    line-height: 1;
+
+    &-hamburger {
+        display: none;
+        position: relative;
+        padding: 17px;
+        transition: background-color 250ms linear;
+        background-color: transparent;
+        z-index: 101;
+
+        &:hover,
+        &:active,
+        &.is-opened {
+            background: var(--color-button);
+        }
+
+        @media (max-width: 979px) {
+            display: block;
+        }
+    
+        @media (max-width: var(--tablet)) {
+            display: block;
+        }
+    
+        @media (max-width: var(--phone)) {
+            display: block;
+        }
+    } 
+}

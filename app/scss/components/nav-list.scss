@@ -20,4 +20,10 @@
       opacity: 0.5;
     }
   }
+
+  @media (max-width: 979px) {
+    @include position;
+    display: flex;
+    flex-direction: column;
+  }
 }

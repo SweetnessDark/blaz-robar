@@ -1,5 +1,11 @@
 .footer {
-  @include head-footer;
   flex-shrink: 0;
   background-color: var(--color-header-footer);
+  padding-top: 39px;
+  padding-bottom: 39px;
+
+  @media (max-width: 320px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
+}

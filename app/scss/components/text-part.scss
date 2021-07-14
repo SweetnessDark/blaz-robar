@@ -5,6 +5,18 @@
     font: var(--font-weight-text-part) var(--font-size-text-part) var(--font-sans-serif);
     color: var(--color-text-part);
 
+    @media (max-width: 979px) {
+        padding-bottom: 100px;
+    }
+
+    @media (max-width: 768px) {
+        padding-bottom: 104px;
+    }
+
+    @media (max-width: 480px) {
+        padding-bottom: 50px;
+    }
+
     h3 {
         font: var(--font-weight-text-h3) var(--font-size-text-h3) var(--font-sans-serif);
         color: var(--color-text-part-h3);
@@ -13,5 +25,23 @@
 
     p {
         margin-bottom: 46px;
+    }
+
+    .container {
+
+        @media (max-width: 979px) {
+            padding-left: 74px;
+            padding-right: 74px;
+        }
+
+        @media (max-width: 768px) {
+            padding-left: 74px;
+            padding-right: 74px;
+        }
+
+        @media (max-width: 480px) {
+            padding-left: 39px;
+            padding-right: 39px;
+        }
     }
 }

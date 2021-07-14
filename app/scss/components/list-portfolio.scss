@@ -4,9 +4,33 @@
     display: flex;
     justify-content: center;
 
+    @media (max-width: 979px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+
     li {  
         width: 33.3%;
         height: 100%;
+
+        @media (max-width: 979px) {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        @media (max-width: 480px) {
+            width: 100%;
+        }
     }
 
     img,

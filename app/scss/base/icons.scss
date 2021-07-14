@@ -32,11 +32,11 @@
             background-color: transparent;
 
             &:before {
-                transform: translate(11px, 2px) rotate(45deg);
+                transform: translate(10px, 2px) rotate(48deg);
                 transform-origin: left top;
             }
             &:after {
-                transform: translate(0, -19px) rotate(-45deg);
+                transform: translate(0, -19px) rotate(-47deg);
                 transform-origin: right bottom;
             }
         }

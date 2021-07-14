@@ -22,14 +22,17 @@
 
         @media (max-width: 979px) {
             display: block;
+            padding: 27px;
         }
     
-        @media (max-width: var(--tablet)) {
+        @media (max-width: 768px) {
             display: block;
+            padding: 27px;
         }
     
-        @media (max-width: var(--phone)) {
+        @media (max-width: 480px) {
             display: block;
+            padding: 17px;
         }
     } 
 }

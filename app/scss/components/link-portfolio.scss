@@ -2,6 +2,14 @@
     background-color: #27212c;
     height: 245px;
 
+    @media (max-width: 979px) {
+        height: 231px;
+    }
+
+    @media (max-width: 768px) {
+        height: 150px;
+    }
+
     @media (max-width: 480px) {
         height: 75px;
     }
@@ -17,6 +25,14 @@
         display: block;
         width: 228px;
         height: 100%;
+
+        @media (max-width: 979px) {
+            width: 218px;
+        }
+    
+        @media (max-width: 768px) {
+            width: 143px;
+        }
 
         @media (max-width: 480px) {
             width: 71px;

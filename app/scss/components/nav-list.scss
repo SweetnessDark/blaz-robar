@@ -5,6 +5,11 @@
   li {
     padding-left: 31px;
 
+    @media (max-width: 979px) {
+      padding-left: 0;
+      margin-bottom: 16px;
+    }
+
     &:first-child {
       padding-left: 0;
     }
@@ -22,8 +27,10 @@
   }
 
   @media (max-width: 979px) {
-    @include position;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

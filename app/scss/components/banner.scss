@@ -3,11 +3,11 @@
     background: var(--color-banner-gradient);
     height: 579px;
 
-    @media (max-width: var(--desktop)) {
+    @media (max-width: 979px) {
         height: 550px;
     }
 
-    @media (max-width: var(--tablet)) {
+    @media (max-width: 768px) {
         height: 350px;
     }
 
@@ -24,6 +24,15 @@
         @include position;
         width: 100%;
         max-width: 695px;
+
+        @media (max-width: 768px) {
+            position: absolute;
+            top: 50%;
+            //Позиционирование контентной части в лево
+            left: 15%;
+            transform: none;
+            max-width: 454px;
+        }
 
         @media (max-width: 480px) {
             position: absolute;

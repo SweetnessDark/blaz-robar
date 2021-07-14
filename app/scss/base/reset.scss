@@ -25,6 +25,10 @@ body {
   min-width: var(--base-min-width);
   display: flex;
   flex-direction: column;
+
+  &.is-modal-opened {
+    overflow: hidden;
+  }
 }
 
 a {

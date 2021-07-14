@@ -8,5 +8,9 @@
         &:first-child {
             padding-left: 0;
         }
+
+        @media (max-width: 480px) {
+            padding-left: 15px;
+        }
     }
 }

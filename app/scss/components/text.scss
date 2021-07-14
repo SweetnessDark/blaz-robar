@@ -1,5 +1,19 @@
 .text {
     column-count: 2;
     column-gap: 65px;
+
+    @media (max-width: 979px) {
+        column-count: auto;
+        column-gap: auto;
+    }
+
+    @media (max-width: 768px) {
+        column-count: auto;
+        column-gap: auto;
+    }
     
+    @media (max-width: 480px) {
+        column-count: auto;
+        column-gap: auto;
+    }
 }

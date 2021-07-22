@@ -17,22 +17,40 @@
         &:hover,
         &:active,
         &.is-opened {
-            background: var(--color-button);
+            background: var(--color-black);
         }
 
-        @media (max-width: 979px) {
+        @media (min-width: 481px) and (max-width: 979px) {
             display: block;
-            padding: 27px;
-        }
-    
-        @media (max-width: 768px) {
-            display: block;
-            padding: 27px;
+            padding: 35px 31px 41px;
         }
     
         @media (max-width: 480px) {
-            display: block;
-            padding: 17px;
+            padding: 18px 16px 25px;
         }
     } 
+
+    &-back-to-top {
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        z-index: 1000;
+        padding: 10px;
+        border-radius: 3px;
+        display: none;
+        transition: background-color 0.4s linear;
+        text-align: center;
+        color: var(--color-white);
+        background: var(--color-deep);
+        font: var(--font-weight-text-link) var(--font-size-text-link) var(--font-sans-serif);
+
+        &:hover,
+        &:active {
+            background: var(--color-light);
+        }
+    }
+
+    &-back-to-top-show {
+        display: block;
+    }
 }

@@ -1,12 +1,17 @@
 .social-network {
     @extend %listreset;
     @include flex;
+    justify-content: flex-end;
 
     li {
         padding-left: 31px;
         
         &:first-child {
             padding-left: 0;
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            padding-left: 20px;
         }
 
         @media (max-width: 480px) {

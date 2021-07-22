@@ -1,15 +1,25 @@
 .footer {
   flex-shrink: 0;
-  background-color: var(--color-header-footer);
   padding-top: 39px;
   padding-bottom: 39px;
+  background-color: var(--color-header-footer);
 
-  @media (max-width: 979px) {
+  @media print {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 768px) and (max-width: 979px) {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 481px) and (max-width: 768px) {
     padding-top: 25px;
     padding-bottom: 25px;
   }

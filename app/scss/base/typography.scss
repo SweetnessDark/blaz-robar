@@ -9,8 +9,8 @@ h4, .h4,
 h5, .h5,
 h6, .h6,
 .h {
-  font-family: var(--headings-font-family);
-  font-weight: bold;
+  font-family: var(--font-sans-serif);
+  font-weight: 700;
   margin: 0 0 0.5em;
   color: var(--headings-color);
 }
@@ -25,6 +25,10 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: var(--headings-sizes-h3);
+
+  @media screen {
+    
+  }
 }
 
 h4, .h4 {

@@ -3,7 +3,8 @@
   @include flex;
 
   li {
-    padding-left: 31px;
+    padding-left: 28px;
+    padding-top: 2px;
 
     @media (max-width: 979px) {
       padding-left: 0;
@@ -11,14 +12,15 @@
     }
 
     &:first-child {
-      padding-left: 0;
+      padding-left: 6px;
+      padding-top: 2px;
     }
   }
 
   a {
     transition: opacity 250ms linear;
-    font: var(--font-weight-nav) var(--font-size-nav) var(--font-sans-serif);
     color: var(--color-white);
+    font: var(--font-weight-nav) var(--font-size-nav) var(--font-sans-serif);
 
     &:hover, 
     &:active {

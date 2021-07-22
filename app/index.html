@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/style.min.css">
+    
     <title>Blaz Robar</title>
 </head>
 <body>
@@ -21,24 +23,50 @@
                   <li><a href="#">BLOG</a></li>
               </ul>
           </nav> <!-- /.nav -->
-          <button type="button"
-                  class="btn btn-hamburger"
-                  title="Show\Hide Menu">
-            <i class="icon icon-hamburger"></i>
-          </button> <!-- /button -->
+            <button type="button"
+                    class="btn btn-hamburger"
+                    title="Show\Hide Menu">
+              <i class="icon icon-hamburger"></i>
+            </button> <!-- /button -->
       </div>
     </header> <!-- /.header -->
     <main class="content">
         <section class="banner">
             <div class="container">
-                <div class="holder">
-                    <h1>
-                        Awesome Free PSD templates & Resources
-                    </h1>
-                    <a href="#">
-                        www.BlazRobar.com
-                    </a>
-                </div> <!-- /.holder -->
+              <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="holder">
+                      <h1>
+                          Awesome Free PSD templates & Resources
+                      </h1>
+                      <a href="#">
+                          www.BlazRobar.com
+                      </a>
+                    </div> <!-- /.holder -->
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="holder">
+                      <h1>
+                          Awesome Free PSD templates & Resources
+                      </h1>
+                      <a href="#">
+                          www.BlazRobar.com
+                      </a>
+                    </div> <!-- /.holder -->
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="holder">
+                      <h1>
+                          Awesome Free PSD templates & Resources
+                      </h1>
+                      <a href="#">
+                          www.BlazRobar.com
+                      </a>
+                    </div> <!-- /.holder -->
+                  </div>
+                </div>
+              </div>
             </div>
         </section> <!-- /.banner -->
       <section class="link-portfolio">
@@ -46,67 +74,83 @@
            <div class="text-link">
              <div class="holder">
                <p>I'm like the Robin Hood of PSD files.</p>
-              </div> <!-- /.holder -->
-            </div>
+            </div> <!-- /.holder -->
+          </div>
             <a class="link" href="#">
                 <span>></span>
             </a> <!-- /.link -->
          </div>
       </section> <!-- /.link-portfolio -->
-      <section class="portfolio">
-        <div class="container">
-          <ul class="list-portfolio">
-              <li>
-                <a class="link link-dark" href="#">
-                  <span>></span>
-                </a>
-              </li>
-              <li>
-                  <img src="./images/br-bridge.png" alt="">
-              </li>
-              <li>
-                  <img src="./images/br-female.png" alt="">
-              </li>
-          </ul> <!-- /.list-portfolio -->
-        </div>
-      </section> <!-- /.portfolio -->
+        <section class="portfolio">
+          <div class="container">
+            <ul class="list-portfolio">
+                <li>
+                  <a class="link link-dark" href="#">
+                    <span>></span>
+                  </a>
+                </li>
+                <li>
+                    <img src="./images/br-bridge.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/br-female.png" alt="">
+                </li>
+            </ul> <!-- /.list-portfolio -->
+          </div>
+        </section> <!-- /.portfolio -->
       <section class="text-part">
         <div class="container">
           <h3>BlazRobar.com</h3>
-          <div class="text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
-            <p>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
-            <p>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
-          </div> <!-- /.text -->
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
+              <p>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
+              <p>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
+            </div> <!-- /.text -->
         </div>
       </section> <!-- /.text-part -->
     </main>
     <footer class="footer">
-    <div class="container">
-      <div class="copyright">
-        <p>Copyright &copy; 2021 <span>Blaz Robar</span></p>
+      <div class="container">
+        <div class="copyright">
+          <p>Copyright &copy; 2021 <span>Blaz Robar</span></p>
+        </div>
+        <ul class="social-network">
+          <li>
+            <a href="#" target="_blank" rel="noopener">
+              <img src="./images/icon-facebook.png" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener">
+              <img src="./images/icon-link.png" alt="Linkedin">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener">
+              <img src="./images/icon-twitter.png" alt="Twitter">
+            </a>
+          </li>
+        </ul> <!-- /.social-network -->
       </div>
-      <ul class="social-network">
-        <li>
-          <a href="#" target="_blank">
-            <img src="./images/icon-facebook.png" alt="Facebook">
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="./images/icon-link.png" alt="Linkedin">
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="./images/icon-twitter.png" alt="Twitter">
-          </a>
-        </li>
-      </ul> <!-- /.social-network -->
-    </div>
+        <button type="button"
+                class="btn btn-back-to-top"
+                title="Scroll to top">
+        &#8593
+        </button>
   </footer> <!-- /.footer -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 3000,
+        },
+      });
+    </script>
     <script src="js/main.js"></script>
 </body>
 

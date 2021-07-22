@@ -1,18 +1,22 @@
 .banner {
+    height: 674px;
     background: var(--color-banner-rgb);
     background: var(--color-banner-gradient);
-    height: 579px;
 
-    @media (max-width: 979px) {
+    @media (min-width: 769px) and (max-width: 979px) {
         height: 550px;
     }
 
-    @media (max-width: 768px) {
-        height: 350px;
+    @media (min-width: 481px) and (max-width: 768px) {
+        height: 507px;
     }
 
     @media (max-width: 480px) {
-        height: 175px;
+        height: 319px;
+    }
+
+    @media print {
+        display: none;
     }
 
     .container {
@@ -20,53 +24,74 @@
         height: 100%;
     }
 
-    .holder {
-        @include position;
-        width: 100%;
-        max-width: 695px;
+    .swiper-container {
+        height: 100%;
+    }
 
-        @media (max-width: 768px) {
+    .holder {
+        position: absolute;
+        top: 60%;
+        left: 44%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        max-width: 727px;
+
+        @media (min-width: 481px) and (max-width: 768px) {
             position: absolute;
-            top: 50%;
+            top: 44%;
             //Позиционирование контентной части в лево
-            left: 15%;
+            left: 8%;
             transform: none;
-            max-width: 454px;
+            max-width: 552px;
         }
 
         @media (max-width: 480px) {
             position: absolute;
-            top: 50%;
+            top: 44%;
             //Позиционирование контентной части в лево
-            left: 15%;
+            left: 8%;
             transform: none;
-            max-width: 190px;
+            max-width: 349px;
         }
     }
 
     h1 {
-        margin: 0 0 32px;
-        font: var(--font-weight-banner-h1) var(--font-size-banner-h1) var(--font-sans-serif);
+        margin: 0 0 56px;
         color: var(--color-white);
+        font: var(--font-weight-banner-h1) var(--font-size-banner-h1) var(--font-sans-serif);
+        letter-spacing: 2px;
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            margin: 0 0 38px;
+            line-height: 1.2;
+            letter-spacing: 4.5px;
+        }
         
-        @media (max-width: 320px) {
-            margin: 0 0 17px;
+        @media (max-width: 480px) {
+            margin: 0 0 25px;
+            letter-spacing: 3px;
+            line-height: 1.2;
         }
     
     }
 
     a {
-        font: var(--font-weight-banner-a) var(--font-size-banner-a) var(--font-sans-serif);
-        color: var(--color-banner-a);
         display: block;
         width: 100%;
+        color: var(--color-banner-a);
+        font: var(--font-weight-banner-a) var(--font-size-banner-a) var(--font-sans-serif);
+        letter-spacing: 2px;
+
+        @media (max-width: 768px) {
+            letter-spacing: 1px;
+        }
 
         &:after {
-            font: var(--font-weight-banner) var(--font-size-banner) var(--headings-font-family);
-            color: var(--color-white);
             content: '>';
             position: absolute;
             right: 0;
+            color: var(--color-white);
+            font: var(--font-weight-banner) var(--font-size-banner) var(--headings-font-family);
         }
     }
 }

@@ -1,41 +1,54 @@
 .link-portfolio {
-    background-color: #27212c;
     height: 245px;
+    background-color: var(--color-deep);
 
-    @media (max-width: 979px) {
+    @media (min-width: 768px) and (max-width: 979px) {
         height: 231px;
     }
 
-    @media (max-width: 768px) {
-        height: 150px;
+    @media (min-width: 481px) and (max-width: 768px) {
+        height: 179px;
     }
 
     @media (max-width: 480px) {
-        height: 75px;
+        height: 112px;
+    }
+
+    @media print {
+        display: none;
     }
 
     .container {
         display: flex;
         justify-content: space-between;
-        height: 100%;
         padding-right: 0;
-        padding-left: 0;
-    }
-    .link {
-        display: block;
-        width: 228px;
+        padding-left: 84px;
         height: 100%;
+        max-width: 1024px;
 
-        @media (max-width: 979px) {
-            width: 218px;
-        }
-    
-        @media (max-width: 768px) {
-            width: 143px;
+        @media (min-width: 481px) and (max-width: 768px) {
+            padding-left: 61px;
         }
 
         @media (max-width: 480px) {
-            width: 71px;
+            padding-left: 14px;
+        }
+    }
+    .link {
+        display: block;
+        width: 212px;
+        height: 100%;
+
+        @media (min-width: 768px) and (max-width: 979px) {
+            width: 218px;
+        }
+    
+        @media (min-width: 481px) and (max-width: 768px) {
+            width: 171px;
+        }
+
+        @media (max-width: 480px) {
+            width: 106px;
         }
     }
 }

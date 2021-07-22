@@ -1,9 +1,19 @@
 .text-link {
-    font: var(--font-weight-text-link) var(--font-size-text-link) var(--font-sans-serif);
-    color: var(--color-text-link);
     height: 100%;
     display: flex;
     align-items: center;
+    padding-top: 35px;
+    color: var(--color-text-link);
+    font: var(--font-weight-text-link) var(--font-size-text-link) var(--font-sans-serif);
+    letter-spacing: 1px;
+
+    @media (min-width: 481px) and (max-width: 768px) {
+        padding-top: 31px;
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 17px;
+    }
 
     .holder {
         flex: 1;

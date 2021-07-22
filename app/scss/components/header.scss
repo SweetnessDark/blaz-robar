@@ -4,24 +4,28 @@
   right: 0;
   left: 0;
   z-index: 50;
+  padding-top: 36px;
+  padding-bottom: 34px;
   background-color: var(--color-header-footer);
-  padding-top: 39px;
-  padding-bottom: 39px;
 
   @media (max-width: 979px) {
     padding-top: 0px;
     padding-bottom: 0px;
-}
+  }
+
+  @media print {
+    display: none;
+  }
   
   .container {
     padding-right: 32px;
     padding-left: 32px;
 
     @media (max-width: 979px) {
-      padding-right: 0;
-      padding-left: 0;
       display: flex;
       justify-content: flex-end;
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }

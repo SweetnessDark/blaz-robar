@@ -32,10 +32,10 @@ $breakpoints: (
   --color-banner-a: rgba(255, 255, 255, 0.5);
   --color-text-link: #9282a0;
   --color-text-part: #515151;
-  --background-color-text-part: #ebebeb;
   --color-text-part-h3: #088ca5;
   --color-copyright: #bc3183;
-  --color-button: #202529;
+  --color-black: #202529;
+  --color-deep: #27212c;
 
   // Fonts
   --font-sans-serif: 'Montserrat', Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -46,12 +46,12 @@ $breakpoints: (
   --font-weight-nav: 400;
   --font-size-nav: 15px/1;
 
-  @media (max-width: 979px) {
+  @media (min-width: 768px) and (max-width: 979px) {
     --font-weight-nav: 400;
     --font-size-nav: 30px/1;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 480px) and (max-width: 768px) {
     --font-weight-nav: 400;
     --font-size-nav: 25px/1;
   }
@@ -61,36 +61,36 @@ $breakpoints: (
     --font-size-nav: 15px/1;
   }
 
-  --font-weight-banner-h1: 400;
+  --font-weight-banner-h1: 700;
   --font-size-banner-h1: 60px/1;
 
-  @media (max-width: 768px) {
-    --font-weight-banner-h1: 400;
-    --font-size-banner-h1: 30px/1;
+  @media (min-width: 480px) and (max-width: 768px) {
+    --font-weight-banner-h1: 700;
+    --font-size-banner-h1: 40px/1;
 }
 
   @media (max-width: 480px) {
-    --font-weight-banner-h1: 400;
-    --font-size-banner-h1: 13px/1;
+    --font-weight-banner-h1: 700;
+    --font-size-banner-h1: 25px/1;
 }
 
   --font-weight-banner-a: 700;
   --font-size-banner-a: 34px/1;
 
-  @media (max-width: 768px) {
+  @media (min-width: 480px) and (max-width: 768px) {
     --font-weight-banner-a: 700;
     --font-size-banner-a: 26px/1;
 }
 
   @media (max-width: 480px) {
     --font-weight-banner-a: 700;
-    --font-size-banner-a: 11px/1;
+    --font-size-banner-a: 16px/1;
 }
 
   --font-weight-banner: 700;
   --font-size-banner: 36px/1;
 
-  @media (max-width: 768px) {
+  @media (min-width: 480px) and (max-width: 768px) {
     --font-weight-banner: 700;
     --font-size-banner: 26px/1;
 }
@@ -103,43 +103,25 @@ $breakpoints: (
   --font-weight-text-link: 700;
   --font-size-text-link: 30px/1;
 
-  @media (max-width: 768px) {
+  @media (min-width: 480px) and (max-width: 768px) {
     --font-weight-text-link: 700;
     --font-size-text-link: 22px/1;
   }
 
   @media (max-width: 480px) {
     --font-weight-text-link: 700;
-    --font-size-text-link: 11px/1;
-  }
-
-  --font-weight-text-part: 400;
-  --font-size-text-part: 14px/26px;
-
-  @media (max-width: 979px) {
-    --font-weight-text-part: 400;
-    --font-size-text-part: 25px/26px;
-  }
-
-  @media (max-width: 768px) {
-    --font-weight-text-part: 400;
-    --font-size-text-part: 20px/26px;
-  }
-
-  @media (max-width: 480px) {
-    --font-weight-text-part: 400;
-    --font-size-text-part: 14px/26px;
+    --font-size-text-link: 13px/1;
   }
 
   --font-weight-text-h3: 400;
   --font-size-text-h3: 30px/1;
 
-  @media (max-width: 979px) {
+  @media (min-width: 768px) and (max-width: 979px) {
     --font-weight-text-h3: 400;
     --font-size-text-h3: 40px/1;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 480px) and (max-width: 768px) {
     --font-weight-text-h3: 400;
     --font-size-text-h3: 37px/1;
   }
@@ -152,12 +134,12 @@ $breakpoints: (
   --font-weight-copyright: 400;
   --font-size-copyright: 15px/1;
 
-  @media (max-width: 979px) {
+  @media (min-width: 768px) and (max-width: 979px) {
     --font-weight-copyright: 400;
     --font-size-copyright: 25px/1;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 480px) and (max-width: 768px) {
     --font-weight-copyright: 400;
     --font-size-copyright: 20px/1;
   }
@@ -170,7 +152,7 @@ $breakpoints: (
   --font-weight-link: 700;
   --font-size-link: 50px/1;
 
-  @media (max-width: 768px) {
+  @media (min-width: 480px) and (max-width: 768px) {
     --font-weight-link: 700;
     --font-size-link: 38px/1;
   }
@@ -181,12 +163,41 @@ $breakpoints: (
   }
 
   // Body base
-  --base-background-color: var(--color-white);
+  --base-background-color: #ebebeb;
   --base-font-family: var(--font-sans-serif);
-  --base-font-size: 1.6rem;
-  --base-line-height: 1.2;
+  --base-font-size: 14px;
+  --base-line-height: 26px;
   --base-text-color: var(--color-black);
   --base-min-width: 320px;
+  --base-font-weight: 400;
+
+  @media (min-width: 768px) and (max-width: 979px) {
+    --font-weight-text-part: 700;
+    --font-size-text-part: 27px/26px;
+  }
+
+  @media (min-width: 480px) and (max-width: 768px) {
+    --font-weight-text-part: 700;
+    --font-size-text-part: 27px/26px;
+  }
+
+  @media (max-width: 480px) {
+    --font-weight-text-part: 400;
+    --font-size-text-part: 14px/26px;
+  }
+
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    --base-font-size: 25px;
+    --base-line-height: 52px;
+    --base-font-weight: 700;
+  }
+
+  @media (max-width: 480px) {
+    --base-font-size: 20px;
+    --base-line-height: 32px;
+    --base-font-weight: 700;
+  }
 
   // Links base
   --base-link-color: var(--color-blue);
@@ -205,7 +216,7 @@ $breakpoints: (
   // Base font styles for headings
   --headings-sizes-h1: 3rem;
   --headings-sizes-h2: 2.7rem;
-  --headings-sizes-h3: 2.4rem;
+  --headings-sizes-h3: 30px;
   --headings-sizes-h4: 2.1rem;
   --headings-sizes-h5: 1.7rem;
   --headings-sizes-h6: 1.5rem;

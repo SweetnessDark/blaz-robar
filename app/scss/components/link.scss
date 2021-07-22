@@ -1,9 +1,9 @@
 .link {
     position: relative;
-    background-color: var(--color-light);
     transition: background-color 0.4s linear;
-    font: var(--font-weight-link) var(--font-size-link) var(--headings-font-family);
     color: var(--color-white);
+    font: var(--font-weight-link) var(--font-size-link) var(--headings-font-family);
+    background-color: var(--color-light);
 
     &:hover {
         background-color: var(--color-dark);

@@ -4,10 +4,20 @@
 
     &-hamburger {
         position: relative;
-        width: 31px;
+        width: 26px;
         height: 4px;
         background-color: var(--color-white);
         transition: transform 250ms linear;
+
+        @media (min-width: 481px) and (max-width: 979px) {
+            width: 37px;
+            height: 6px;
+        }
+
+        @media (max-width: 480px) {
+            width: 26px;
+            height: 4px;
+        }
 
         &:before,
         &:after {
@@ -15,29 +25,71 @@
             right: 0;
             left: 0;
             content: '';
-            width: 31px;
+            width: 26px;
             height: 4px;
             background-color: var(--color-white);
             transition: transform 250ms linear;
+
+            @media (min-width: 481px) and (max-width: 979px) {
+                width: 37px;
+                height: 6px;
+            }
+    
+            @media (max-width: 480px) {
+                width: 26px;
+                height: 4px;
+            }
         }
 
         &:before {
-            top: -10px;
+            top: -8px;
+
+            @media (min-width: 481px) and (max-width: 979px) {
+                top: -11px;
+            }
+    
+            @media (max-width: 480px) {
+                top: -8px;
+            }
         }
         &:after {
-            bottom: -10px;
+            bottom: -8px;
+
+            @media (min-width: 481px) and (max-width: 979px) {
+                bottom: -11px;
+            }
+    
+            @media (max-width: 480px) {
+                bottom: -8px;
+            }
         }
 
         .is-opened & {
             background-color: transparent;
 
             &:before {
-                transform: translate(10px, 2px) rotate(48deg);
+                transform: translate(8px, 0px) rotate(48deg);
                 transform-origin: left top;
+
+                @media (min-width: 481px) and (max-width: 979px) {
+                    transform: translate(11px, 6px) rotate(48deg);
+                }
+        
+                @media (max-width: 480px) {
+                    transform: translate(8px, 0px) rotate(48deg);
+                }
             }
             &:after {
-                transform: translate(0, -19px) rotate(-47deg);
+                transform: translate(0, -17px) rotate(-46deg);
                 transform-origin: right bottom;
+
+                @media (min-width: 481px) and (max-width: 979px) {
+                    transform: translate(0, -17px) rotate(-46deg);
+                }
+        
+                @media (max-width: 480px) {
+                    transform: translate(0, -17px) rotate(-46deg);
+                }
             }
         }
     }
